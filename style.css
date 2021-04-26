@@ -1,0 +1,162 @@
+:root {
+  --orange: hsl(31, 77%, 52%);
+  --lightblue: hsl(184, 100%, 22%);
+  --darkblue: hsl(179, 100%, 13%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+html {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  overflow: hidden;
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+}
+
+.main {
+  display: flex;
+  margin-top: 7vh;
+
+  width: 80vw;
+  border-radius: 15px;
+  height: 80vh;
+}
+
+.segment {
+  display: flex;
+  flex-direction: column;
+  padding: 4%;
+  position: relative;
+}
+
+#segment1 {
+  background-color: var(--orange);
+}
+
+#segment2 {
+  background-color: var(--lightblue);
+}
+
+#segment3 {
+  background-color: var(--darkblue);
+}
+.title {
+  font-family: "Big Shoulders Display";
+  color: hsla(0, 0%, 100%, 0.75);
+  font-size: 170%;
+}
+p {
+  color: hsla(0, 0%, 100%, 0.75);
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 18px;
+  line-height: 180%;
+  padding-right: 15%;
+}
+
+.button1 {
+  color: var(--orange);
+}
+.button2 {
+  color: var(--lightblue);
+}
+.button3 {
+  color: var(--darkblue);
+}
+
+button {
+  height: 11%;
+  width: 190px;
+  font-size: 140%;
+  font-weight: bolder;
+  border-radius: 100px;
+  border: none;
+  position: absolute;
+  top: 65vh;
+}
+
+.segment > * {
+  margin-bottom: 12%;
+}
+
+@media only screen and (max-width: 800px) {
+  p {
+    font-size: 15px;
+  }
+  .title {
+    font-size: 3.7vw;
+  }
+  button {
+    width: 20vw;
+    font-size: 3vw;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  p {
+    font-size: 3em;
+  }
+
+  button {
+    width: 58.24px;
+  }
+}
+
+@media only screen and (max-width: 580px) {
+ 
+
+  .main {
+    overflow: hidden;
+    box-sizing: border-box;
+    width: 80%;
+  }
+  .segment > * {
+    margin-bottom: 4%;
+  }
+
+  .segment {
+    height: 33%;
+    padding: 6%;
+  }
+
+  .segment1 {
+    border-radius: 0px;
+  }
+
+  .main {
+    flex-direction: column;
+    height: 90vh;
+    min-width: 250px;
+  }
+
+  button {
+    position: absolute;
+    top: 24vh;
+    font-size: 8px;
+    margin-top: 4px;
+  }
+  .title {
+    font-size: 10.5px;
+  }
+
+  .icon img {
+    height: 20px;
+  }
+
+  p {
+    font-size: 0.72rem;
+
+    padding-right: 2vw;
+  }
+}
